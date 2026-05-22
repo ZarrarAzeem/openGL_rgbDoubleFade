@@ -133,8 +133,8 @@ int main()
 
         float timeValue = glfwGetTime();
         float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
-        float redValue = (cos(timeValue) / 2.0f) + 0.5f;
-        float blueValue = (cos(timeValue * 1.15f) / 2.0f) + 0.5f;
+        float redValue = (sin(timeValue + 2.094f) / 2.0f) + 0.5f;
+        float blueValue = (sin(timeValue * 1.15f + 4.188f) / 2.0f) + 0.5f;
         int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
 
         glUseProgram(shaderProgram);
